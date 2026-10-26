@@ -1,0 +1,195 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Soft Shadows & Glows -->
+    <filter id="badgeShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#4A89C8" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softBlur" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    
+    <!-- Gradients -->
+    <linearGradient id="circleBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="60%" stop-color="#F2F8FD"/>
+      <stop offset="100%" stop-color="#E1F0FA"/>
+    </linearGradient>
+
+    <linearGradient id="catOrange" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFA845"/>
+      <stop offset="60%" stop-color="#F48A25"/>
+      <stop offset="100%" stop-color="#DE7012"/>
+    </linearGradient>
+
+    <linearGradient id="catStripe" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#D96306"/>
+      <stop offset="100%" stop-color="#BA4E00"/>
+    </linearGradient>
+
+    <linearGradient id="cakeCream" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#FFF5F7"/>
+    </linearGradient>
+
+    <linearGradient id="cakeBase" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFB3C6"/>
+      <stop offset="100%" stop-color="#FF94AE"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Big Circular Outer Badge with Shadow -->
+  <g filter="url(#badgeShadow)">
+    <!-- Outer White Ring Frame -->
+    <circle cx="250" cy="250" r="235" fill="#FFFFFF" stroke="#7BB4E3" stroke-width="8"/>
+    <!-- Outer Decorative Dash Ring -->
+    <circle cx="250" cy="250" r="220" fill="url(#circleBg)" stroke="#BFE0F7" stroke-width="4" stroke-dasharray="14,10"/>
+  </g>
+
+  <!-- Background Kawaii Pastel Confetti / Sparkles -->
+  <g>
+    <!-- Little Stars -->
+    <path d="M100 110 L104 95 L108 110 L123 114 L108 118 L104 133 L100 118 L85 114 Z" fill="#FFD54F"/>
+    <path d="M390 120 L393 108 L396 120 L408 123 L396 126 L393 138 L390 126 L378 123 Z" fill="#FFD54F"/>
+    <path d="M90 340 L93 330 L96 340 L106 343 L96 346 L93 356 L90 346 L80 343 Z" fill="#FFD54F"/>
+    <path d="M395 330 L398 320 L401 330 L411 333 L401 336 L398 346 L395 336 L385 333 Z" fill="#FFD54F"/>
+
+    <!-- Pastel Polka Dots -->
+    <circle cx="160" cy="90" r="7" fill="#FFB7C5" opacity="0.8"/>
+    <circle cx="340" cy="85" r="8" fill="#B7E4C7" opacity="0.8"/>
+    <circle cx="80" cy="220" r="6" fill="#89C4E6" opacity="0.7"/>
+    <circle cx="420" cy="230" r="7" fill="#FFB7C5" opacity="0.7"/>
+    <circle cx="130" cy="400" r="8" fill="#FFE58F" opacity="0.8"/>
+    <circle cx="370" cy="395" r="7" fill="#B7E4C7" opacity="0.8"/>
+  </g>
+
+  <!-- Cute Cat Tail (Orange) -->
+  <path d="M350 350 C410 370 430 310 400 270 C385 250 365 260 375 280 C390 305 375 335 340 330 Z" fill="url(#catOrange)"/>
+  <!-- Tail Stripes -->
+  <path d="M388 275 C394 285 390 295 380 295" stroke="url(#catStripe)" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <path d="M382 305 C388 318 380 326 368 325" stroke="url(#catStripe)" stroke-width="6" stroke-linecap="round" fill="none"/>
+
+  <!-- Orange Cat Body -->
+  <ellipse cx="250" cy="330" rx="125" ry="110" fill="url(#catOrange)"/>
+  <!-- Cat Cream Belly Patch -->
+  <ellipse cx="250" cy="350" rx="72" ry="70" fill="#FFF4E6"/>
+
+  <!-- Cat Back Body Stripes -->
+  <path d="M140 310 C155 315 170 310 175 295" stroke="url(#catStripe)" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <path d="M135 345 C150 350 168 345 172 330" stroke="url(#catStripe)" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <path d="M360 310 C345 315 330 310 325 295" stroke="url(#catStripe)" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <path d="M365 345 C350 350 332 345 328 330" stroke="url(#catStripe)" stroke-width="7" stroke-linecap="round" fill="none"/>
+
+  <!-- Cat Ears -->
+  <!-- Left Ear -->
+  <polygon points="145,190 120,95 200,145" fill="url(#catOrange)"/>
+  <polygon points="150,180 132,115 190,148" fill="#FFAEC0"/>
+  <!-- Right Ear -->
+  <polygon points="355,190 380,95 300,145" fill="url(#catOrange)"/>
+  <polygon points="350,180 368,115 310,148" fill="#FFAEC0"/>
+
+  <!-- Orange Cat Head -->
+  <ellipse cx="250" cy="210" rx="120" ry="100" fill="url(#catOrange)"/>
+
+  <!-- Head Stripes (Classic Tabby Pattern on Forehead) -->
+  <path d="M250 120 L250 148" stroke="url(#catStripe)" stroke-width="6" stroke-linecap="round"/>
+  <path d="M228 126 Q235 142 242 152" stroke="url(#catStripe)" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M272 126 Q265 142 258 152" stroke="url(#catStripe)" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M210 138 Q222 150 232 158" stroke="url(#catStripe)" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+  <path d="M290 138 Q278 150 268 158" stroke="url(#catStripe)" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Side Face Stripes -->
+  <path d="M140 200 C155 204 170 202 178 196" stroke="url(#catStripe)" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M138 220 C154 222 168 218 174 212" stroke="url(#catStripe)" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M360 200 C345 204 330 202 322 196" stroke="url(#catStripe)" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M362 220 C346 222 332 218 326 212" stroke="url(#catStripe)" stroke-width="5" stroke-linecap="round" fill="none"/>
+
+  <!-- White Muzzle / Cheeks -->
+  <ellipse cx="225" cy="235" rx="36" ry="28" fill="#FFF5EB"/>
+  <ellipse cx="275" cy="235" rx="36" ry="28" fill="#FFF5EB"/>
+
+  <!-- Happy Curved Eyes (^ ^) -->
+  <path d="M192 198 Q210 178 228 198" stroke="#3D2614" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <path d="M272 198 Q290 178 308 198" stroke="#3D2614" stroke-width="7" stroke-linecap="round" fill="none"/>
+
+  <!-- Eyelashes / Cute Eye Corners -->
+  <path d="M228 196 L236 193" stroke="#3D2614" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M272 196 L264 193" stroke="#3D2614" stroke-width="4.5" stroke-linecap="round"/>
+
+  <!-- Heart-Shaped Rosy Cheeks -->
+  <ellipse cx="174" cy="225" rx="14" ry="10" fill="#FF8CA3" opacity="0.75"/>
+  <ellipse cx="326" cy="225" rx="14" ry="10" fill="#FF8CA3" opacity="0.75"/>
+
+  <!-- Cute Pink Nose -->
+  <polygon points="250,224 240,214 260,214" fill="#FF5E7E"/>
+
+  <!-- W-Shaped Smiling Mouth -->
+  <path d="M242 226 Q232 238 220 230" stroke="#3D2614" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M258 226 Q268 238 280 230" stroke="#3D2614" stroke-width="5" stroke-linecap="round" fill="none"/>
+
+  <!-- Whiskers -->
+  <line x1="140" y1="222" x2="185" y2="226" stroke="#D17522" stroke-width="4" stroke-linecap="round"/>
+  <line x1="138" y1="238" x2="182" y2="236" stroke="#D17522" stroke-width="4" stroke-linecap="round"/>
+  <line x1="360" y1="222" x2="315" y2="226" stroke="#D17522" stroke-width="4" stroke-linecap="round"/>
+  <line x1="362" y1="238" x2="318" y2="236" stroke="#D17522" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- ================= CAKE HELD IN PAWS ================= -->
+  <!-- Cake Plate -->
+  <ellipse cx="250" cy="370" rx="95" ry="18" fill="#E8F1F8" stroke="#7BB4E3" stroke-width="4"/>
+
+  <!-- Cake Bottom Layer -->
+  <rect x="180" y="300" width="140" height="60" rx="14" fill="url(#cakeBase)"/>
+  
+  <!-- Cake Middle Cream Filling Line -->
+  <line x1="182" y1="332" x2="318" y2="332" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Whipped Cream Frosting Dripping Down -->
+  <path d="M178 308 Q190 324 202 308 Q214 324 226 308 Q238 324 250 308 Q262 324 274 308 Q286 324 298 308 Q310 324 322 308 L322 292 L178 292 Z" fill="url(#cakeCream)"/>
+  <rect x="178" y="288" width="144" height="20" rx="8" fill="url(#cakeCream)"/>
+
+  <!-- Sprinkles on Cake -->
+  <rect x="195" y="344" width="8" height="4" rx="2" fill="#FFE58F" transform="rotate(25 195 344)"/>
+  <rect x="230" y="348" width="8" height="4" rx="2" fill="#7BB4E3" transform="rotate(-15 230 348)"/>
+  <rect x="270" y="344" width="8" height="4" rx="2" fill="#B7E4C7" transform="rotate(35 270 344)"/>
+  <rect x="300" y="346" width="7" height="4" rx="2" fill="#FFFFFF"/>
+
+  <!-- Fresh Strawberry on Cake Top -->
+  <ellipse cx="250" cy="272" rx="18" ry="22" fill="#FF4767"/>
+  <!-- Strawberry Seeds -->
+  <circle cx="244" cy="266" r="1.8" fill="#FFE5EC"/>
+  <circle cx="254" cy="270" r="1.8" fill="#FFE5EC"/>
+  <circle cx="248" cy="278" r="1.8" fill="#FFE5EC"/>
+  <!-- Strawberry Green Leaves -->
+  <polygon points="250,250 240,257 260,257" fill="#4CAF50"/>
+  <polygon points="250,250 234,252 242,260" fill="#43A047"/>
+  <polygon points="250,250 266,252 258,260" fill="#43A047"/>
+
+  <!-- Lit Birthday Candle -->
+  <rect x="247" y="228" width="6" height="22" rx="3" fill="#89C4E6" stroke="#4A89C8" stroke-width="1.5"/>
+  <line x1="250" y1="228" x2="250" y2="220" stroke="#3D352E" stroke-width="2"/>
+  <!-- Candle Flame -->
+  <ellipse cx="250" cy="212" rx="6" ry="10" fill="#FFA726"/>
+  <ellipse cx="250" cy="214" rx="3.5" ry="6" fill="#FFEE58"/>
+
+  <!-- Chubby Orange Paws Holding the Plate/Cake -->
+  <!-- Left Paw -->
+  <ellipse cx="178" cy="336" rx="22" ry="17" fill="url(#catOrange)" stroke="#DE7012" stroke-width="3"/>
+  <ellipse cx="178" cy="336" rx="14" ry="10" fill="#FFF4E6"/>
+  <circle cx="168" cy="333" r="3" fill="#DE7012"/>
+  <circle cx="175" cy="328" r="3" fill="#DE7012"/>
+  <circle cx="184" cy="328" r="3" fill="#DE7012"/>
+
+  <!-- Right Paw -->
+  <ellipse cx="322" cy="336" rx="22" ry="17" fill="url(#catOrange)" stroke="#DE7012" stroke-width="3"/>
+  <ellipse cx="322" cy="336" rx="14" ry="10" fill="#FFF4E6"/>
+  <circle cx="332" cy="333" r="3" fill="#DE7012"/>
+  <circle cx="325" cy="328" r="3" fill="#DE7012"/>
+  <circle cx="316" cy="328" r="3" fill="#DE7012"/>
+
+  <!-- Bottom Floating Badge "PANGPURIYE BAKERY" -->
+  <g transform="translate(145, 415)">
+    <rect x="0" y="0" width="210" height="46" rx="23" fill="#FFFFFF" stroke="#7BB4E3" stroke-width="3" filter="url(#badgeShadow)"/>
+    <text x="105" y="28" font-family="'Fredoka', 'Mali', sans-serif" font-weight="700" font-size="16" fill="#4A89C8" text-anchor="middle" letter-spacing="1">
+      🍞 PANGPURIYE 🎂
+    </text>
+  </g>
+</svg>

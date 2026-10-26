@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ปังปุริเย่ เบเกอรี่ | Pangpuriye Bakery - ร้านเบเกอรี่สุดคิ้วท์สไตล์มินิมอล</title>
+  <meta name="description" content="ร้านปังปุริเย่ เบเกอรี่ ขนมปังและเค้กโฮมเมดสไตล์ญี่ปุ่น โทนสีฟ้าพาสเทลน่ารักมินิมอล อบสดใหม่ทุกวัน">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+</head>
+<body>
+
+  <!-- 1. ธงราวสามเหลี่ยมตกแต่งสไตล์คาเฟ่ (Garland Bunting) -->
+  <div class="garland-banner"></div>
+
+  <!-- 2. Header & Navigation Bar -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo" title="หน้าแรก ปังปุริเย่ เบเกอรี่">
+        <div class="brand-icon-wrap">
+          <img src="assets/images/logo.svg" alt="ปังปุริเย่ เบเกอรี่ โลโก้ แมวถือเค้ก">
+        </div>
+        <div class="brand-text">
+          <h1>ปังปุริเย่ เบเกอรี่</h1>
+          <div class="subtext">
+            <span>Pangpuriye Bakery</span>
+            <span class="open-badge"><span class="dot"></span> OPEN</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Menu Links -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero" class="active">หน้าแรก</a></li>
+          <li><a href="#menu">เมนูขนม</a></li>
+          <li><a href="#story">เรื่องราวร้าน</a></li>
+          <li><a href="#location">หน้าร้าน & เวลาเปิด</a></li>
+        </ul>
+      </nav>
+
+      <!-- Cart Button Floating in Header -->
+      <div class="nav-actions">
+        <button id="open-cart-btn" class="cart-btn-nav" aria-label="เปิดตะกร้าสินค้า">
+          <span>🧺 ตะกร้า</span>
+          <span id="cart-count-badge" class="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 3. Hero Section (บรรยากาศต้อนรับหน้าร้าน) -->
+    <section id="hero" class="hero-section">
+      <div class="hero-wrapper">
+        <div class="hero-info">
+          <div class="hero-tag">
+            <span>🐱</span> ขนมปังโฮมเมดสไตล์ญี่ปุ่นอบใหม่ทุกวัน
+          </div>
+          <h2 class="hero-title">
+            ความสุขคำโต อบสดใหม่ด้วยความ<span class="highlight-blue">ปังปุริเย่~</span>
+          </h2>
+          <p class="hero-desc">
+            ยินดีต้อนรับสู่ร้านขนมปังและคาเฟ่โทนฟ้าพาสเทลสุดมินิมอล เราคัดสรรเนยแท้และแป้งพรีเมียม ปั้นด้วยความใส่ใจในทุกชิ้น พร้อมเสิร์ฟความคิ้วท์ให้คุณทุกวัน 🍞✨
+          </p>
+          <div class="hero-cta-group">
+            <a href="#menu" class="btn-primary">
+              <span>🥐</span> ดูเมนูขนมสุดน่ารัก
+            </a>
+            <a href="#location" class="btn-secondary">
+              <span>🏡</span> แวะมาหน้าร้าน
+            </a>
+          </div>
+        </div>
+
+        <!-- Storefront Visual Showcase: Circular Orange Cat Holding Cake -->
+        <div class="hero-visual">
+          <div class="hero-circle-card">
+            <div class="hanging-sign">
+              <span>⭐</span> PASTRY PARADISE OPEN
+            </div>
+            <div class="hero-circle-img-wrap">
+              <img src="assets/images/hero-orange-cat.png" alt="น้องแมวสีส้มถือเค้ก ร้านปังปุริเย่ เบเกอรี่">
+            </div>
+            <div class="floating-bubble">
+              <div style="width: 38px; height: 38px; border-radius: 50%; overflow: hidden; border: 1.5px solid var(--blue-primary); flex-shrink: 0;">
+                <img src="assets/images/hero-orange-cat.png" alt="มาสคอตแมวสีส้มถือเค้ก" style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+              <div class="bubble-text">
+                <div class="bubble-title">น้องส้มปังปุริเย่ 🐾</div>
+                <div class="bubble-desc">"อบเค้กหอมๆ มาเสิร์ฟให้แล้วงับ!"</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Menu & Ordering Section -->
+    <section id="menu" class="menu-section">
+      <div class="section-header">
+        <span class="sub-badge">OUR FRESH BAKERY</span>
+        <h2 class="main-title">เมนูขนมเบเกอรี่สุดคิ้วท์</h2>
+        <p class="desc">กดเลือกขนมที่ชอบใส่ตะกร้า คำนวณราคาและสั่งซื้อได้ทันทีเลยค่ะ</p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="category-tabs" role="tablist">
+        <button class="cat-btn active" data-category="all">
+          <span>✨</span> ทั้งหมด (All)
+        </button>
+        <button class="cat-btn" data-category="bread">
+          <span>🍞</span> ขนมปัง & ครัวซองต์
+        </button>
+        <button class="cat-btn" data-category="cake">
+          <span>🍰</span> เค้ก & ทาร์ต
+        </button>
+        <button class="cat-btn" data-category="dessert">
+          <span>🍪</span> คุกกี้ & ของหวาน
+        </button>
+        <button class="cat-btn" data-category="drink">
+          <span>🥤</span> เครื่องดื่มคาเฟ่
+        </button>
+      </div>
+
+      <!-- Products Grid (Rendered via app.js) -->
+      <div id="products-grid" class="products-grid">
+        <!-- Javascript will populate products here -->
+      </div>
+    </section>
+
+    <!-- 5. Story & Atmosphere Section -->
+    <section id="story" class="story-section">
+      <div class="story-wrapper">
+        <div class="story-content">
+          <span class="sub-badge">HOMEMADE WITH LOVE</span>
+          <h2>ทำไมใครๆ ถึงหลงรัก<br>"ปังปุริเย่ เบเกอรี่"</h2>
+          <p>
+            ร้านของเราเริ่มต้นจากความรักในการอบขนมโฮมเมด และความชื่นชอบในสไตล์คาเฟ่ญี่ปุ่นโทนสีฟ้าพาสเทลอันอบอุ่น เราอยากให้ทุกคนที่ก้าวเข้ามาในร้าน หรือเปิดกล่องขนม รู้สึกได้รับพลังบวกและรอยยิ้มกลับไปเสมอ
+          </p>
+          <ul class="features-list">
+            <li>
+              <span class="check-icon">✓</span>
+              <span>เนยสดแท้ 100% นำเข้าจากฝรั่งเศส ปราศจากไขมันทรานส์</span>
+            </li>
+            <li>
+              <span class="check-icon">✓</span>
+              <span>อบสดใหม่วันต่อวัน ไร้สารกันบูด นุ่มฟูแบบธรรมชาติ</span>
+            </li>
+            <li>
+              <span class="check-icon">✓</span>
+              <span>ดีไซน์รูปสัตว์สุดคิ้วท์ ถ่ายรูปสวยเป๊ะทุกมุม</span>
+            </li>
+            <li>
+              <span class="check-icon">✓</span>
+              <span>หน้าร้านสไตล์มินิมอล มีที่นั่งชิล แอร์เย็นฉ่ำ สบายใจ</span>
+            </li>
+          </ul>
+          <a href="#menu" class="btn-primary">
+            <span>🛒</span> ลองชิมความอร่อยเลย
+          </a>
+        </div>
+
+        <div class="story-mosaic">
+          <div class="mosaic-box">
+            <div class="mosaic-icon">🌾</div>
+            <h4>แป้งสาลีคัดเกรด</h4>
+            <p>เนื้อนุ่ม ฟู เบา เคี้ยวเพลินละมุนลิ้น</p>
+          </div>
+          <div class="mosaic-box">
+            <div class="mosaic-icon">🧈</div>
+            <h4>เนยสดแท้บริสุทธิ์</h4>
+            <p>หอมเนยฟุ้งตั้งแต่เดินเข้าร้าน</p>
+          </div>
+          <div class="mosaic-box">
+            <div class="mosaic-icon">📸</div>
+            <h4>มุมถ่ายรูปคาเฟ่</h4>
+            <p>โทนฟ้าขาวสไตล์เกาหลี-ญี่ปุ่น</p>
+          </div>
+          <div class="mosaic-box">
+            <div class="mosaic-icon">🐶</div>
+            <h4>Pet-Friendly</h4>
+            <p>มีโซนต้อนรับน้องหมาน้องแมว</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Storefront & Location Section -->
+    <section id="location" class="location-section">
+      <div class="section-header">
+        <span class="sub-badge">VISIT OUR SHOP</span>
+        <h2 class="main-title">แวะมาเช็กอินที่หน้าร้านได้นะคะ</h2>
+        <p class="desc">ร้านตั้งอยู่กลางซอย บรรยากาศเงียบสงบ เหมาะสำหรับมานั่งพักผ่อนทานขนม</p>
+      </div>
+
+      <div class="location-grid">
+        <div class="location-info">
+          <div>
+            <div class="info-item">
+              <div class="info-icon">📍</div>
+              <div class="info-text">
+                <h4>ที่ตั้งร้าน (Location)</h4>
+                <p>124/8 ถนนสุขใจ ซอย 12 (ตรงข้ามสวนพฤกษาภิรมย์), เขตสายไหม กรุงเทพมหานคร</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">⏰</div>
+              <div class="info-text">
+                <h4>เวลาเปิด-ปิด (Opening Hours)</h4>
+                <p><strong>วันอังคาร - วันอาทิตย์:</strong> 08:30 น. - 18:00 น.</p>
+                <p style="color: #FF5E7E; font-size: 0.85rem; margin-top: 3px;">*หยุดทุกวันจันทร์ เพื่ออบขนมเมนูใหม่ๆ</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">📞</div>
+              <div class="info-text">
+                <h4>ติดต่อสอบถาม & สั่งจอง</h4>
+                <p>โทรศัพท์: 089-123-4567</p>
+                <p>LINE Official: @pangpuriye</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h4 style="font-size: 0.95rem; margin-bottom: 0.5rem; color: var(--text-muted);">ติดตามโซเชียลมีเดีย:</h4>
+            <div class="social-links">
+              <span class="social-pill">📸 IG: @pangpuriye.bakery</span>
+              <span class="social-pill">💬 LINE: @pangpuriye</span>
+              <span class="social-pill">📘 FB: ปังปุริเย่ เบเกอรี่</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="location-visual">
+          <div class="store-facade-card">
+            <img src="assets/images/storefront.jpg" alt="หน้าร้านปังปุริเย่">
+          </div>
+          <div class="map-badge-callout">
+            <span>🗺️</span> มีที่จอดรถหน้าร้าน 4 คัน & เดินจาก BTS 5 นาที
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 7. Cart Drawer (Sidebar Modal) -->
+  <div id="cart-drawer-overlay" class="cart-drawer-overlay">
+    <aside class="cart-drawer" aria-label="ตะกร้าสั่งซื้อ">
+      <div class="cart-header">
+        <h3><span>🧺</span> ตะกร้าสินค้าของคุณ</h3>
+        <button id="close-cart-btn" class="close-drawer-btn" title="ปิดหน้าต่าง">✕</button>
+      </div>
+
+      <!-- Items List -->
+      <div id="cart-items-container" class="cart-body">
+        <!-- Rendered dynamically -->
+      </div>
+
+      <!-- Cart Drawer Footer -->
+      <div class="cart-footer">
+        <!-- Coupon input -->
+        <div style="display: flex; gap: 8px; margin-bottom: 0.85rem;">
+          <input type="text" id="coupon-input" placeholder="โค้ดส่วนลด (เช่น PANGPURIYE)" style="flex:1; padding: 6px 12px; border-radius: 9999px; border: 1.5px solid #DFC29F; font-size: 0.85rem;">
+          <button onclick="applyCoupon()" class="btn-secondary" style="padding: 6px 14px; font-size: 0.85rem;">ใช้โค้ด</button>
+        </div>
+
+        <div class="cart-summary-row">
+          <span>ยอดรวมสินค้า</span>
+          <span id="cart-subtotal">0 ฿</span>
+        </div>
+        <div class="cart-summary-row" style="color: #FF5E7E;">
+          <span>ส่วนลด</span>
+          <span id="cart-discount-val">0 ฿</span>
+        </div>
+        <div class="cart-total-row">
+          <span>ยอดชำระสุทธิ</span>
+          <span id="cart-total" class="total-amount">0 ฿</span>
+        </div>
+        <button id="checkout-btn" class="btn-checkout" disabled>
+          ดำเนินการสั่งซื้อ / ชำระเงิน ✨
+        </button>
+      </div>
+    </aside>
+  </div>
+
+  <!-- 8. Checkout Modal Dialog -->
+  <div id="checkout-modal" class="modal-overlay">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3><span>🧁</span> ข้อมูลการสั่งซื้อ</h3>
+        <button id="close-checkout-btn" class="close-drawer-btn">✕</button>
+      </div>
+      <div class="modal-body">
+        <form id="checkout-form">
+          <div class="form-group">
+            <label class="form-label">รูปแบบการรับขนม</label>
+            <div class="radio-pills">
+              <label class="radio-pill-label">
+                <input type="radio" name="orderType" value="ทานที่ร้าน (Dine-in)" checked>
+                ☕ ทานที่ร้าน
+              </label>
+              <label class="radio-pill-label">
+                <input type="radio" name="orderType" value="รับกลับบ้าน (Takeaway)">
+                🛍️ รับกลับบ้าน
+              </label>
+              <label class="radio-pill-label">
+                <input type="radio" name="orderType" value="จัดส่งถึงที่ (Delivery)">
+                🛵 เดลิเวอรี่
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="cust-name" class="form-label">ชื่อผู้สั่งซื้อ *</label>
+            <input type="text" id="cust-name" class="form-input" placeholder="เช่น คุณเมย์ หรือ คุณเปรม" required>
+          </div>
+
+          <div class="form-group">
+            <label for="cust-phone" class="form-label">เบอร์โทรศัพท์ติดต่อ *</label>
+            <input type="tel" id="cust-phone" class="form-input" placeholder="เช่น 081-234-5678" required>
+          </div>
+
+          <div class="form-group">
+            <label for="pay-method" class="form-label">วิธีชำระเงิน</label>
+            <select id="pay-method" class="form-select">
+              <option value="สแกน QR Code พร้อมเพย์ (PromptPay)">📱 สแกน QR Code พร้อมเพย์</option>
+              <option value="ชำระเงินสดหน้าร้าน / เก็บเงินปลายทาง">💵 ชำระเงินสดหน้าร้าน / ปลายทาง</option>
+              <option value="บัตรเครดิต / เดบิต">💳 บัตรเครดิต / เดบิต</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="cust-note" class="form-label">ข้อความเพิ่มเติม / ความต้องการพิเศษ</label>
+            <textarea id="cust-note" class="form-textarea" rows="2" placeholder="เช่น แยกน้ำแข็ง, ขอเทียนวันเกิดน่ารักๆ 1 เล่ม"></textarea>
+          </div>
+
+          <button type="submit" class="btn-checkout" style="margin-top: 1rem;">
+            ยืนยันการสั่งซื้อ 🍞💖
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- 9. Receipt Modal Dialog (Thermal Print Style) -->
+  <div id="receipt-modal" class="modal-overlay">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3><span>🧾</span> สรุปใบเสร็จคำสั่งซื้อ</h3>
+        <button id="close-receipt-btn" class="close-drawer-btn">✕</button>
+      </div>
+      <div class="modal-body" id="receipt-content">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 10. Toast Notification Container -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- 11. Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <div style="width: 44px; height: 44px; border-radius: 50%; overflow: hidden; border: 2px solid var(--blue-primary); display: inline-block;">
+          <img src="assets/images/logo.svg" alt="โลโก้ ปังปุริเย่" style="width: 100%; height: 100%; object-fit: contain;">
+        </div>
+        <h3>ปังปุริเย่ เบเกอรี่ (Pangpuriye Bakery)</h3>
+      </div>
+      <p class="footer-tagline">
+        ร้านขนมปังและเค้กโฮมเมดสไตล์น่ารักมินิมอล อบสดใหม่ด้วยความรักทุกเช้า
+      </p>
+      <div class="footer-copyright">
+        <p>© 2026 ปังปุริเย่ เบเกอรี่ - ผลงานส่งการบ้านอาจารย์เปรม | พัฒนาด้วยความประณีต 💖</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="app.js"></script>
+</body>
+</html>

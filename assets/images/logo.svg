@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <filter id="softGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#7BB4E3" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Circular Outer Rings -->
+  <circle cx="100" cy="100" r="95" fill="#FFFFFF" stroke="#7BB4E3" stroke-width="4" filter="url(#softGlow)"/>
+  <circle cx="100" cy="100" r="88" fill="#F4FAFF" stroke="#BFE0F7" stroke-width="2" stroke-dasharray="6,4"/>
+
+  <!-- Sparkles / Little Stars -->
+  <path d="M42 45 L44 38 L46 45 L53 47 L46 49 L44 56 L42 49 L35 47 Z" fill="#FFE58F"/>
+  <path d="M155 50 L156.5 45 L158 50 L163 51.5 L158 53 L156.5 58 L155 53 L150 51.5 Z" fill="#FFE58F"/>
+  <circle cx="38" cy="120" r="3" fill="#BFE0F7"/>
+  <circle cx="162" cy="115" r="3.5" fill="#BFE0F7"/>
+
+  <!-- Cat Ears -->
+  <polygon points="56,76 45,36 78,56" fill="#F48A25"/>
+  <polygon points="58,70 50,44 74,58" fill="#FFB7C5"/>
+  <polygon points="144,76 155,36 122,56" fill="#F48A25"/>
+  <polygon points="142,70 150,44 126,58" fill="#FFB7C5"/>
+
+  <!-- Cat Head (Orange Tabby) -->
+  <ellipse cx="100" cy="88" rx="46" ry="40" fill="#FFA845"/>
+  <!-- Forehead Tabby Stripes -->
+  <path d="M100 58 L100 68" stroke="#D96306" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M92 61 Q95 68 98 71" stroke="#D96306" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <path d="M108 61 Q105 68 102 71" stroke="#D96306" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <!-- Top fur patch / bread blush -->
+  <ellipse cx="100" cy="62" rx="20" ry="8" fill="#F48A25" opacity="0.4"/>
+
+  <!-- Happy Curved Eyes -->
+  <path d="M78 84 Q84 76 90 84" stroke="#4A3427" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <path d="M110 84 Q116 76 122 84" stroke="#4A3427" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Cute Nose & Smile -->
+  <polygon points="100,89 97,86 103,86" fill="#E26D82"/>
+  <path d="M97 90 Q93 95 88 91" stroke="#4A3427" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M103 90 Q107 95 112 91" stroke="#4A3427" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Rosy Cheeks -->
+  <circle cx="72" cy="92" r="6" fill="#FFAEC0" opacity="0.7"/>
+  <circle cx="128" cy="92" r="6" fill="#FFAEC0" opacity="0.7"/>
+
+  <!-- Whiskers -->
+  <line x1="56" y1="88" x2="68" y2="90" stroke="#D19356" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="55" y1="96" x2="67" y2="95" stroke="#D19356" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="144" y1="88" x2="132" y2="90" stroke="#D19356" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="145" y1="96" x2="133" y2="95" stroke="#D19356" stroke-width="2.2" stroke-linecap="round"/>
+
+  <!-- Cat Body -->
+  <path d="M72 120 Q60 160 100 160 Q140 160 128 120 Z" fill="#FFA845"/>
+  <!-- Belly -->
+  <ellipse cx="100" cy="142" rx="20" ry="14" fill="#FFF5EB"/>
+
+  <!-- Little Cake Held in Paws -->
+  <!-- Cake Plate -->
+  <ellipse cx="100" cy="146" rx="28" ry="6" fill="#E3DFD5"/>
+  <!-- Cake Base -->
+  <rect x="78" y="122" width="44" height="22" rx="6" fill="#FFB7C5"/>
+  <!-- Cake Frosting / Drips -->
+  <path d="M78 126 Q84 132 89 126 Q94 132 100 126 Q106 132 111 126 Q117 132 122 126 L122 122 L78 122 Z" fill="#FFFFFF"/>
+  <!-- Strawberry / Cherry on Top -->
+  <circle cx="100" cy="116" r="6" fill="#FF4767"/>
+  <circle cx="98" cy="114" r="1.5" fill="#FFE5EC"/>
+  <!-- Lit Candle option (Cute little flame) -->
+  <rect x="99" y="106" width="2" height="6" fill="#7BB4E3"/>
+  <path d="M100 99 Q103 103 100 106 Q97 103 100 99 Z" fill="#FFD54F"/>
+
+  <!-- Cat Paws Holding the Cake -->
+  <ellipse cx="76" cy="132" rx="7" ry="5.5" fill="#FFA845" stroke="#DE7012" stroke-width="1.5"/>
+  <ellipse cx="124" cy="132" rx="7" ry="5.5" fill="#FFA845" stroke="#DE7012" stroke-width="1.5"/>
+</svg>
